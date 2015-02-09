@@ -1,7 +1,7 @@
 komodo-edit
 ========
 
-Installs SmartGit for Ubuntu from PPA.
+Installs Komodo Edit for Ubuntu from PPA.
 
 Requirements
 ------------
