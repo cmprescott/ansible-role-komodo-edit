@@ -1,2 +1,16 @@
 ---
 # tasks file for ansible-role-komodo-edit
+
+# -------------
+# Install and configure Komodo Edit
+# -------------
+- name: ensure Komodo Edit repository from PPA and install its signing key.
+  sudo: Yes
+  apt_repository: repo='ppa:mystic-mirage/komodo-edit'
+
+- name: ensure SmartGit installed
+  sudo: Yes
+  apt: >
+    name=komodo-edit
+    state=present
+    update_cache=Yes
