@@ -8,7 +8,7 @@
   sudo: Yes
   apt_repository: repo='ppa:mystic-mirage/komodo-edit'
 
-- name: ensure SmartGit installed
+- name: ensure Komodo Edit installed
   sudo: Yes
   apt: >
     name=komodo-edit
