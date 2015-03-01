@@ -1,0 +1,10 @@
+---
+# Darwin (Mac OS X) tasks file for ansible-role-komodo-edit
+
+# -------------
+# Install and configure Komodo Edit
+# -------------
+- name: ensure homebrew cask present
+  homebrew_cask: >
+    name=komodo-edit
+    state=present
