@@ -3,12 +3,14 @@ Ansible Role: Komodo Edit
 [![Build Status](https://travis-ci.org/cmprescott/ansible-role-komodo-edit.svg?branch=master)](https://travis-ci.org/cmprescott/ansible-role-komodo-edit)
 
 Installs Komodo Edit.
+
 TODO: Add resource configuration (http://komodoide.com/resources/install-instructions/)
 
 Requirements
 ------------
 
 Debian Linux: None
+
 Darwin (OS X): Homebrew
 
 Role Variables
@@ -25,7 +27,6 @@ Dependencies
 ------------
 
 Darwin: If you're lazy use geerlingguy.homebrew to install homebrew
-
 
 Example Playbook
 -------------------------
