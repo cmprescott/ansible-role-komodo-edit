@@ -35,7 +35,7 @@ Example Playbook
 
     - hosts: developer
       roles:
-         role: komodo-edit
+        - { role: ansible-role-komodo-edit, sudo: Yes }
 
 License
 -------
