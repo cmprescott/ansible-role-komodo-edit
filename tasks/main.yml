@@ -2,16 +2,10 @@
 # tasks file for ansible-role-komodo-edit
 
 # -------------
-# Install and configure Komodo Edit
+# Platform conditional install and configuration
 # -------------
-- name: ensure Komodo Edit repository from PPA and install its signing key.
-  sudo: Yes
-  apt_repository: repo='ppa:mystic-mirage/komodo-edit'
+- include: setup-Debian.yml
+  when: ansible_os_family == 'Debian'
 
-- name: ensure Komodo Edit installed
-  sudo: Yes
-  apt: >
-    name=komodo-edit
-    state=present
-    update_cache=Yes
-    cache_valid_time=86400
+- include: setup-Darwin.yml
+  when:  ansible_os_family == 'Darwin'
