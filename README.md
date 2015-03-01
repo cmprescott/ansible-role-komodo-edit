@@ -9,7 +9,7 @@ TODO: Add resource configuration (http://komodoide.com/resources/install-instruc
 Requirements
 ------------
 
-Debian Linux: None
+Debian (Linux): None
 
 Darwin (OS X): Homebrew
 
@@ -26,7 +26,9 @@ komodo_edit_debian_ppa_repo: ppa:mystic-mirage/komodo-edit
 Dependencies
 ------------
 
-Darwin: If you're lazy use geerlingguy.homebrew to install homebrew
+Debian (Linux): None
+
+Darwin (OS X): If you don't have homebrew; use an Ansible role like geerlingguy.homebrew to install it
 
 Example Playbook
 -------------------------
