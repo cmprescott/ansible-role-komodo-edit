@@ -1,0 +1,17 @@
+---
+# Debian tasks file for ansible-role-komodo-edit
+
+# -------------
+# Install and configure Komodo Edit
+# -------------
+- name: ensure PPAs repo present
+  sudo: Yes
+  apt_repository: repo='{{ komodo_edit_debian_ppa_repo }}'
+
+- name: ensure PPA present
+  sudo: Yes
+  apt: >
+    name=komodo-edit
+    state=present
+    update_cache=Yes
+    cache_valid_time=86400
