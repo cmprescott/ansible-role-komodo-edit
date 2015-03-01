@@ -1,5 +1,6 @@
-komodo-edit
+Ansible Role: Komodo Edit
 ========
+[![Build Status](https://travis-ci.org/cmprescott/ansible-role-komodo-edit.svg?branch=master)](https://travis-ci.org/cmprescott/ansible-role-komodo-edit)
 
 Installs Komodo Edit.
 TODO: Add resource configuration (http://komodoide.com/resources/install-instructions/)
