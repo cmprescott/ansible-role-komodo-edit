@@ -4,10 +4,10 @@
 # -------------
 # Install and configure Komodo Edit
 # -------------
-- name: ensure Komodo Edit PPA repo present
+- name: Debian | ensure Komodo Edit PPA repo present
   apt_repository: repo='{{ komodo_edit_debian_ppa_repo }}'
 
-- name: ensure Komodo Edit present
+- name: Debian | ensure Komodo Edit present
   apt: >
     name=komodo-edit
     state=present
