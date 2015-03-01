@@ -1,2 +1,7 @@
 ---
 # defaults file for ansible-role-komodo-edit
+
+# --------
+# Debian based default repo
+# --------
+komodo_edit_debian_ppa_repo: ppa:mystic-mirage/komodo-edit
