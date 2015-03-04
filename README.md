@@ -33,9 +33,11 @@ Darwin (OS X): If you don't have homebrew; use an Ansible role like geerlingguy.
 Example Playbook
 -------------------------
 
+```yaml
     - hosts: developer
       roles:
         - { role: ansible-role-komodo-edit, sudo: Yes }
+```
 
 License
 -------
