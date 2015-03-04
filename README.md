@@ -16,7 +16,7 @@ Darwin (OS X): Homebrew
 Role Variables
 --------------
 
-```
+```yaml
 # --------
 # Debian based default repo
 # --------
