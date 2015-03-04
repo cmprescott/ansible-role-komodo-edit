@@ -34,9 +34,9 @@ Example Playbook
 -------------------------
 
 ```yaml
-    - hosts: developer
-      roles:
-        - { role: ansible-role-komodo-edit, sudo: Yes }
+- hosts: developer
+  roles:
+    - { role: ansible-role-komodo-edit, sudo: Yes }
 ```
 
 License
