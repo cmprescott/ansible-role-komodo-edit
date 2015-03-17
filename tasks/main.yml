@@ -4,8 +4,11 @@
 # -------------
 # Platform conditional install and configuration
 # -------------
-- include: setup-Debian.yml
-  when: ansible_os_family == 'Debian'
+#- include: setup-Debian.yml
+#  when: ansible_distribution == 'Debian'
 
 - include: setup-Darwin.yml
   when:  ansible_os_family == 'Darwin'
+
+- include: setup-Ubuntu.yml
+  when: ansible_distribution == 'Ubuntu'

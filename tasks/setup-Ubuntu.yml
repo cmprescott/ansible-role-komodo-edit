@@ -1,13 +1,13 @@
 ---
-# Debian tasks file for ansible-role-komodo-edit
+# Ubuntu tasks file for ansible-role-komodo-edit
 
 # -------------
 # Install and configure Komodo Edit
 # -------------
-- name: Debian | ensure Komodo Edit PPA repo present
+- name: Ubuntu | ensure Komodo Edit PPA repo present
   apt_repository: repo='{{ komodo_edit_debian_ppa_repo }}'
 
-- name: Debian | ensure Komodo Edit present
+- name: Ubuntu | ensure Komodo Edit present
   apt: >
     name=komodo-edit
     state=present

@@ -20,11 +20,13 @@ Role Variables
 # --------
 # Debian based default repo
 # --------
-komodo_edit_debian_ppa_repo: ppa:mystic-mirage/komodo-edit
+komodo_edit_ubuntu_ppa_repo: ppa:mystic-mirage/komodo-edit
 ```
 
 Dependencies
 ------------
+
+Ubuntu (Linux): None
 
 Debian (Linux): None
 
