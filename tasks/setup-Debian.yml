@@ -1,0 +1,46 @@
+---
+# Debin (Linux) tasks file for ansible-role-komodo-edit
+
+# -------------
+# Install and configure Komodo Edit
+# -------------
+- name: Debian | check for installation 
+  stat: path=/usr/bin/komodo
+  register: komodo_bin
+
+- name: Debian | ensure download destination writable
+  file:
+    path: "{{ komodo_edit_debian_dir_download }}"
+    state: directory
+    mode: "u=rwx"
+    owner: "{{ ansible_ssh_user }}"
+  when: not komodo_bin.stat.exists
+
+- name: Debian | download installer
+  get_url:
+    url: "{{ komodo_edit_debian_url }}"
+    dest: "{{ komodo_edit_debian_dir_download }}/komodo-edit.tar.gz"
+  when: not komodo_bin.stat.exists
+
+- name: Debian | unarchive the installer
+  command:
+    "tar xvf {{ komodo_edit_debian_dir_download }}/komodo-edit.tar.gz -C {{ komodo_edit_debian_dir_download }} --strip-components=1"
+  when: not komodo_bin.stat.exists
+
+- name: Debian | ensure install directory exists with correct permissions
+  file:
+    path: "{{ komodo_edit_debian_dir_install }}"
+    state: directory
+    mode: "u=rwx,g=rwx,o=rx"
+    owner: root
+
+- name: Debian | run the installer script
+  command: "{{ komodo_edit_debian_dir_download }}/./install.sh -I {{ komodo_edit_debian_dir_install }}"
+  when: not komodo_bin.stat.exists
+  
+- name: Debian | link komodo-edit to /usr/bin
+  file:
+    src: "{{ komodo_edit_debian_dir_install }}/bin/komodo"
+    dest: /usr/bin/komodo
+    state: link
+    
