@@ -3,17 +3,24 @@ galaxy_info:
   author: Prescott Chris
   description: Installs Komodo Edit
   license: BSD
-  min_ansible_version: 1.2
+  min_ansible_version: 1.6
   platforms:
    - name: Darwin
      versions:
-     - all
+     - Mavericks
+     - Yosemite
    - name: Ubuntu
      versions:
-     - all
+     - Precise
+     - Raring
+     - Saucy
+     - Trusty
+     - Utopic
+     - Vivid
    - name: Debian
      versions:
-     - all
+     - wheezy
+     - jessie
   categories:
    - development
 dependencies: []

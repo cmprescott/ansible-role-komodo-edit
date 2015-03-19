@@ -2,16 +2,18 @@ Ansible Role: Komodo Edit
 ========
 [![Build Status](https://travis-ci.org/cmprescott/ansible-role-komodo-edit.svg?branch=master)](https://travis-ci.org/cmprescott/ansible-role-komodo-edit)
 
-Installs Komodo Edit.
+Installs Komodo Edit 8.5.
 
 TODO: Add resource configuration (http://komodoide.com/resources/install-instructions/)
 
 Requirements
 ------------
 
-Debian (Linux): None
+Darwin (OS X): 10.9+ (Mavericks|Yosemite)
 
-Darwin (OS X): Homebrew
+Debian (Linux): 7+ (wheezy|jessie)
+
+Ubuntu (Linux): 12.04+ (Precise|Raring|Saucy|Trusty|Utopic|Vivid)
 
 Role Variables
 --------------
@@ -33,11 +35,11 @@ komodo_edit_ubuntu_ppa_repo: ppa:mystic-mirage/komodo-edit
 Dependencies
 ------------
 
-Ubuntu (Linux): None
+Darwin (OS X): homebrew
 
 Debian (Linux): None
 
-Darwin (OS X): If you don't have homebrew; use an Ansible role like geerlingguy.homebrew to install it
+Ubuntu (Linux): None
 
 Example Playbook
 -------------------------
