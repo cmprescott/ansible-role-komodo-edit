@@ -8,8 +8,8 @@
   apt_repository: repo='{{ komodo_edit_ubuntu_ppa_repo }}'
 
 - name: Ubuntu | ensure Komodo Edit present
-  apt: >
-    name=komodo-edit
-    state=present
-    update_cache=Yes
-    cache_valid_time=86400
+  apt:
+    name: komodo-edit
+    state: present
+    update_cache: Yes
+    cache_valid_time: 86400
