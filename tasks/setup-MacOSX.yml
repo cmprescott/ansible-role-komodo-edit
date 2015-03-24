@@ -1,7 +1,7 @@
 ---
 # Darwin (Mac OS X) tasks file for ansible-role-komodo-edit
 
-- name: Darwin | ensure Komodo Edit present
+- name: MacOSX | ensure Komodo Edit present
   homebrew_cask:
     name: komodo-edit
     state: present
