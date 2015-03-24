@@ -14,7 +14,7 @@
 
 - name: Debian | download installer
   get_url:
-    url: "{{ komodo_edit_url_pkg[ansible_architecture] }}"
+    url: "{{ komodo_edit_pkg_url[ansible_architecture] }}"
     dest: "{{ komodo_edit_dir_download }}/komodo-edit.tar.gz"
   when: not komodo_bin.stat.exists
 

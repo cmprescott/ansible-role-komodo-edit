@@ -1,6 +1,7 @@
 ---
 # defaults file for ansible-role-komodo-edit
 
+komodo_edit_pkg_install_using: 
+komodo_edit_pkg_url: 
 komodo_edit_dir_download: 
 komodo_edit_dir_install: 
-komodo_edit_url_pkg:

@@ -1,5 +1,6 @@
 ---
 
+komodo_edit_pkg_install_using: Ubuntu_apt
+komodo_edit_pkg_url: ppa:mystic-mirage/komodo-edit
 komodo_edit_dir_download: 
 komodo_edit_dir_install: 
-komodo_edit_url_pkg: ppa:mystic-mirage/komodo-edit

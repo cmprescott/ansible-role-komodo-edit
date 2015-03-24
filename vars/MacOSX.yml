@@ -1,5 +1,7 @@
 ---
 
+komodo_edit_pkg_install_using: MacOSX_homebrew
+komodo_edit_pkg_url:
 komodo_edit_dir_download: 
 komodo_edit_dir_install: 
-komodo_edit_url_pkg: 
+komodo_edit_path_pref: "~/Library/Application Support/KomodoEdit/8.5/prefs.xml"

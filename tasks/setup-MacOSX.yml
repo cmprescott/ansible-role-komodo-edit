@@ -1,6 +1,7 @@
 ---
 # Darwin (Mac OS X) tasks file for ansible-role-komodo-edit
 
+# @TODO: Maybe make more similar to Debian so we can ensure version
 - name: MacOSX | ensure Komodo Edit present
   homebrew_cask:
     name: komodo-edit

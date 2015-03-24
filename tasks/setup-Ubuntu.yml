@@ -2,7 +2,7 @@
 # Ubuntu tasks file for ansible-role-komodo-edit
 
 - name: Ubuntu | ensure Komodo Edit PPA repo present
-  apt_repository: repo='{{ komodo_edit_url_pkg }}'
+  apt_repository: repo='{{ komodo_edit_pkg_url }}'
 
 - name: Ubuntu | ensure Komodo Edit present
   apt:

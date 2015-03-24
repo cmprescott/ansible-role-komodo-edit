@@ -4,17 +4,24 @@
 # -------------
 # Include variables
 # -------------
-- name: include OS-specific variables.
-  include_vars: "{{ ansible_distribution }}.yml"
+- name: Get most specific variables avaiable
+  include_vars: "{{ item }}"
+  with_first_found:
+    - "{{ ansible_distribution }}.yml"
+    - "{{ ansible_os_family }}.yml"
+    - "{{ ansible_system }}.yml"
 
 # -------------
 # Verify installed
 # -------------
-- include: setup-Debian.yml
-  when: ansible_distribution == 'Debian'
-
 - include: setup-MacOSX.yml
-  when:  ansible_distribution == 'MacOSX'
+  sudo: Yes
+  when: komodo_edit_pkg_install_using == 'MacOSX_homebrew'
 
 - include: setup-Ubuntu.yml
-  when: ansible_distribution == 'Ubuntu'
+  sudo: Yes
+  when: komodo_edit_pkg_install_using == 'Ubuntu_apt'
+
+- include: setup-Linux.yml
+  sudo: Yes
+  when: komodo_edit_pkg_install_using == 'Linux_script'

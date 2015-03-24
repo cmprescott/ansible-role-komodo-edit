@@ -1,7 +1,9 @@
 ---
 
-komodo_edit_dir_download: /tmp
-komodo_edit_dir_install: /usr/local/komodo-edit
-komodo_edit_url_pkg:
+komodo_edit_pkg_install_using: Linux_script
+komodo_edit_pkg_url:
   i386: http://downloads.activestate.com/Komodo/releases/8.5.4/Komodo-Edit-8.5.4-14424-linux-x86.tar.gz
   x86_64: http://downloads.activestate.com/Komodo/releases/8.5.4/Komodo-Edit-8.5.4-14424-linux-x86_64.tar.gz
+komodo_edit_dir_download: /tmp
+komodo_edit_dir_install: /usr/local/komodo-edit
+
