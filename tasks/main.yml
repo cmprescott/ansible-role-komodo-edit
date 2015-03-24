@@ -2,13 +2,19 @@
 # tasks file for ansible-role-komodo-edit
 
 # -------------
-# Platform conditional install and configuration
+# Include variables
+# -------------
+- name: include OS-specific variables.
+  include_vars: "{{ ansible_distribution }}.yml"
+
+# -------------
+# Verify installed
 # -------------
 - include: setup-Debian.yml
   when: ansible_distribution == 'Debian'
 
-- include: setup-Darwin.yml
-  when:  ansible_os_family == 'Darwin'
+- include: setup-MacOSX.yml
+  when:  ansible_distribution == 'MacOSX'
 
 - include: setup-Ubuntu.yml
   when: ansible_distribution == 'Ubuntu'

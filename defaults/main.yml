@@ -1,14 +1,6 @@
 ---
 # defaults file for ansible-role-komodo-edit
 
-# --------
-# Debian defaults
-# --------
-komodo_edit_debian_url: http://downloads.activestate.com/Komodo/releases/8.5.4/Komodo-Edit-8.5.4-14424-linux-x86_64.tar.gz
-komodo_edit_debian_dir_download: /tmp
-komodo_edit_debian_dir_install: /usr/local/komodo-edit
-
-# --------
-# Ubuntu default repo
-# --------
-komodo_edit_ubuntu_ppa_repo: ppa:mystic-mirage/komodo-edit
+komodo_edit_dir_download: 
+komodo_edit_dir_install: 
+komodo_edit_url_pkg:
