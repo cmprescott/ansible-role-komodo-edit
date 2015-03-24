@@ -9,11 +9,17 @@ TODO: Add resource configuration (http://komodoide.com/resources/install-instruc
 Requirements
 ------------
 
-Debian: 7+ (wheezy|jessie)
-
-Mac OS X: 10.9+ (Mavericks|Yosemite)
-
-Ubuntu: 12.04+ (Precise|Raring|Saucy|Trusty|Utopic|Vivid)
+- Darwin
+  - http://docs.activestate.com/komodo/8.5/install.html#System_Req_OSX
+  - **Mac OS X:** 10.9+ (Mavericks|Yosemite)
+- Linux
+  - http://docs.activestate.com/komodo/8.5/install.html#System_Req_Lin
+  - **CentOS:** 6.0+
+  - **Debian:** 7+ (wheezy|jessie)
+  - **Fedora Core:** 15+
+  - **OpenSUSE:** 12.1+
+  - **SuSE Linux Enterprise Desktop/Server:** 11.3+ 
+  - **Ubuntu:** 12.04+ (Precise|Raring|Saucy|Trusty|Utopic|Vivid)
 
 Role Variables
 --------------
