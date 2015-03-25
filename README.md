@@ -9,11 +9,9 @@ TODO: Add resource configuration (http://komodoide.com/resources/install-instruc
 Requirements
 ------------
 
-- Darwin
-  - http://docs.activestate.com/komodo/8.5/install.html#System_Req_OSX
+- [Darwin](http://docs.activestate.com/komodo/8.5/install.html#System_Req_OSX "Mac OS X Requirements")
   - **Mac OS X:** 10.9+ (Mavericks|Yosemite)
-- Linux
-  - http://docs.activestate.com/komodo/8.5/install.html#System_Req_Lin
+- [Linux](http://docs.activestate.com/komodo/8.5/install.html#System_Req_Lin "Linux Requirements")
   - **CentOS:** 6.0+
   - **Debian:** 7+ (wheezy|jessie)
   - **Fedora Core:** 15+
@@ -34,11 +32,10 @@ komodo_edit_dir_install: Remote directory to install application and lib to
 Dependencies
 ------------
 
-Mac OS X: homebrew
+- **Darwin (Mac OS X)**: homebrew
+- **Linux**: None
 
-Debian: None
-
-Ubuntu: None
+TODO: Bake homebrew dependency into meta file
 
 Example Playbook
 -------------------------
