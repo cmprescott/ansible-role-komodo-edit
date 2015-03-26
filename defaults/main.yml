@@ -1,7 +1,7 @@
 ---
 # defaults file for ansible-role-komodo-edit
 
-komodo_edit_pkg_install_using: 
-komodo_edit_pkg_url: 
-komodo_edit_dir_download: 
-komodo_edit_dir_install: 
+komodo_edit_pkg_install_using: "" # Linux_script || MacOSX_homebrew || Ubuntu_apt
+komodo_edit_pkg_url: "" # http://example.com/komodo-edit.tar.gz || ppa:example-repo/komodo-edit
+komodo_edit_dir_download: "" # Remote dir to temp store pkg
+komodo_edit_dir_install: "" # Remote dir for application and lib
